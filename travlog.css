@@ -26,9 +26,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-.container-lg {
-    /* margin-left: 6rem; */
-}
 img {
     max-width: 100%;
 }
@@ -75,7 +72,7 @@ section.home .decoration::before {
     --bs-btn-padding-y: .9rem;
     --bs-btn-padding-x: 2rem;
     font-weight: 600;
-        /*login button: added blue active & grey hover  */
+    /*login button: added blue active & grey hover  */
    --bs-btn-active-color: #222831 ;
    --bs-btn-active-bg: #0d6efd ;
    --bs-btn-active-border-color: #EEEEEE ;
@@ -83,7 +80,6 @@ section.home .decoration::before {
    --bs-btn-hover-bg: #EEEEEE;
    --bs-btn-hover-border-color: #EEEEEE;
 }
-/* added height to adjust to singup button  */
 .btn-empty {
     max-height: 51px;
 }
@@ -99,7 +95,7 @@ section.home .decoration::before {
     justify-content: center;
 }
 .shadow {
-     box-shadow: 0 15px 15px 0 #00000012;
+    box-shadow: 0 15px 15px  #00000012;
     --bs-btn-color: var(--primary-color);
     font-size: 14px;
     display: inline-flex;
@@ -113,6 +109,7 @@ section.home .decoration::before {
     display: inline-flex;
     gap: 10px;
     align-items: center;
+    margin-top: 5rem;
 }
 .btn-shadow::after {
     content: "";
@@ -122,7 +119,7 @@ section.home .decoration::before {
     display: block;
 }
 .home h2 {
-    font-size: 69px;
+    font-size: 65px;
     font-weight: 600;
     line-height: 120%;
 }
@@ -161,6 +158,10 @@ section.home .decoration::before {
     width: 48px;
     height: 49px;
     background: url(icons/14.svg) no-repeat center center;
+}
+/* Section Clients */
+.clients {
+    margin-bottom: 3rem;
 }
 /* Section Services */
 .section-heading h3 {
@@ -270,12 +271,12 @@ section.travel .decoration {
 section.travel .decoration::before {
     content: "";
     background: url(images/discount-icon.png) no-repeat center center;
-    width: 277px;
+    width: 110px;
     height: 353px;
     display: block;
     position: absolute;
     bottom: 143px;
-    left: 1050px;
+    left: 1150px;
 }
 /* Section feature */
 .feature {
@@ -347,24 +348,15 @@ section.travel .decoration::before {
 }
 .offer .church {
     height: 100%;
-    width: 120%;
-    margin-left: 3rem;
+    width: 100%;
+    margin-left: 5rem;
+    margin-top: 3rem;
 }
 /* Section Testimonials*/
-/* .testimonials  {
-    position: relative;
-    background-image: url(images/bg-shape.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    width: 100%;
-    z-index: 2;
-} */
-
 .testimonials {
     position: relative;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 .testimonials::before {
     content: "";
@@ -375,9 +367,13 @@ section.travel .decoration::before {
     left: 0;
     background-image: url(images/bg-shape.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
-    opacity: 0.5; /* Adjust the opacity as needed */
+    opacity: 0.2; 
+    z-index: 1; 
+}
+.container-lg {
+    position: relative;
     z-index: 2; 
 }
  .testimonials span {
@@ -395,6 +391,9 @@ section.travel .decoration::before {
     font-size: 23px;
     text-align: center;
  }
+ .space {
+    margin-top: 500px;
+ }
  .dots a {
     background: #19182513;
     border-radius: 50%;
@@ -406,14 +405,13 @@ section.travel .decoration::before {
   .dots a:nth-child(2) {
     background: var(--primary-color);
   }
-  .space {
-    padding-top: 300px;
+  .margin {
+    padding-top: 230px;
  }
 /* Section Subscribe*/
 .subscribe .container-lg {
     border-radius: 32px;
     background: rgba(250, 205, 73, 0.08);
-    margin-top: 100px;
 }
 .subscribe p {
     color: var(--grey-scale-black, #191825);
@@ -494,18 +492,88 @@ footer h3 {
 footer .decoration {
     position: relative;
 }
-footer .decoration {
-    position: relative;
-}
 footer .decoration::after {
     content: "";
     background: url(images/deco3.png) no-repeat center center;
-    width: 332px;
+    width: 120px;
     height: 351px;
     display: block;
     position: absolute;
-    bottom: 150px;
-    right: -820px;
+    bottom: 190px;
+    right: -720px;
+}
+
+@media screen and (max-width: 1451px) {
+    footer .decoration::after {
+        right: -670px;
+        bottom: 190px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .p-custom {
+      padding-left: 100px;
+  }
+  .container-lg {
+      max-width: 1184px;
+  }
+}
+@media screen and (max-width: 1398px) {
+    section.travel .decoration::before {
+        bottom: 140px;
+        left: 1110px;
+    }
+}
+@media screen and (max-width: 1348px) {
+    footer .decoration::after {
+        right: -600px;
+        bottom: 190px;
+    }
+    section.travel .decoration::before {
+        bottom: 120px;
+        left: 1060px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-heading h2 {
+        font-size: 40px;
+    }
+    .travel .image {
+        height: 697px;
+        background-size: cover;
+    }
+    .travel .image::before {
+        display: none;
+    }
+    section.travel .decoration::before { 
+        display: none;
+    } 
+    footer .decoration::after {
+        right: -550px;
+        bottom: 180px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;  
+    align-items: center;
+     }
+     .input-group .form-control {
+        background: #FFF;
+        border: #FFF;
+        height: 80px;
+        width: 600px;
+    }
+     .btnsubscribe {
+        height: 80px;
+        width: 300px;
+     }
+}
+
+@media screen and (max-width: 1105px) {
+    footer .decoration::after {
+        right: -500px;
+        bottom: 240px;
+    }
 }
 
 
@@ -558,21 +626,10 @@ footer .decoration::after {
         justify-content: center; 
         align-items: center;
     }
-    section.destinations .decoration::before { 
-        display: none;
-    }
-    section.travel .decoration::before { 
-        display: none;
-    }
-    footer .decoration::after {
-        content: "";
-        background: url(images/deco3.png) no-repeat center center;
-        width: 332px;
-        height: 351px;
-        display: block;
-        position: absolute;
-        bottom: 10px;
-        right: -220px;
+    .offer .church {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px;
     }
     .travel p {
         text-align: center;
@@ -584,7 +641,19 @@ footer .decoration::after {
     .offer .text {
         text-align: center;
     }
+    footer .decoration::after {
+        right: 30px;
+        bottom: 200px;
+    }
+    .btn-shadow {
+        margin-top: 0rem;
+    }
+    .margin {
+        padding-top: 30px;
+     }
 } 
+
+
 
 @media screen and (max-width: 768px) {
     body {
@@ -628,35 +697,23 @@ footer .decoration::after {
         height: 80px;
         width: 280px;
     }
-     .btnsubscribe {
-        height: 80px;
-     }
      footer .decoration::after {
-      display: none;
+        display: none;
     }
     section.subscribe .decoration::before {
         display: none;
     }
-}
-
-@media screen and (min-width: 1400px) {
-      .p-custom {
-        padding-left: 100px;
-    }
-    .container-lg {
-        max-width: 1184px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .section-heading h2 {
-        font-size: 40px;
-    }
-    .travel .image {
-        height: 697px;
-        background-size: cover;
-    }
-    .travel .image::before {
+    .testimonials::before {
         display: none;
     }
+    .space {
+        margin-top: 80px;
+     }
+     .margin {
+        padding-top: 10px;
+     }
 }
+
+
+
+
