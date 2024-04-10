@@ -56,6 +56,11 @@ nav.navbar li.active a {
     cursor: pointer;
 }
 /* Section Home */
+section{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 section.home .decoration {
     position: relative;
 }
@@ -357,9 +362,9 @@ section.travel .decoration::before {
 }
 /* Section Testimonials*/
 .testimonials {
-    position: relative;
     width: 100%;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
 }
 .testimonials::before {
     content: "";
@@ -418,7 +423,7 @@ section.travel .decoration::before {
 }
 .subscribe p {
     color: var(--grey-scale-black, #191825);
-    font-size: 55px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 120%;
 }
@@ -451,10 +456,13 @@ section.subscribe .decoration::before {
 footer {
     padding-bottom: 2rem;
     padding-top: 5rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 footer p {
     color: rgba(25, 24, 37, 0.50);
-    font-size: 23px;
+    font-size: 20px;
     margin: 2rem 0 3rem;
 }
 footer .social ul {
@@ -569,7 +577,8 @@ footer .decoration::after {
     }
      .btnsubscribe {
         height: 80px;
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
      }
 }
 
@@ -655,9 +664,10 @@ footer .decoration::after {
     .margin {
         padding-top: 30px;
      }
+    body{
+        margin-left: 15px;
+    }
 } 
-
-
 
 @media screen and (max-width: 768px) {
     body {
@@ -684,6 +694,9 @@ footer .decoration::after {
     .testimonials  {
         background-image: none;
     }
+    .testimonials p{
+        font-size: 18px;
+    }
     .space {
         padding-top: 800px;
      }
@@ -707,6 +720,17 @@ footer .decoration::after {
     section.subscribe .decoration::before {
         display: none;
     }
+    .subscribe p {
+        font-size: 20px;
+    }
+   .btnsubscribe {
+        width: 200px;
+    }
+    .subscribe input{
+        width: 250px;
+    }
+    
+
     .testimonials::before {
         display: none;
     }
