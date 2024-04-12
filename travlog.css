@@ -69,7 +69,7 @@ section.home .decoration::before {
     height: 310px;
     display: block;
     position: absolute;
-    bottom: -80px;
+    bottom: -100px;
     left: -71px;
 }
 .btn {
@@ -184,6 +184,7 @@ section.home .decoration::before {
     height: 100%;
     transition: all .5s ease-in-out;
     border: 1px solid rgb(25, 24, 27, .1);
+    overflow: hidden;
 }
 .service:hover {
     box-shadow: 0 0 25px 0px rgba(0, 0, 0, .1); 
@@ -283,11 +284,11 @@ section.travel .decoration::before {
     content: "";
     background: url(images/discount-icon.png) no-repeat center center;
     width: 110px;
-    height: 353px;
+    height: 320px;
     display: block;
     position: absolute;
-    bottom: 143px;
-    left: 1150px;
+    bottom: 100px;
+    left: 1130px;
 }
 .feature {
     border: 1px solid rgb(25, 24, 27, .1);
@@ -464,7 +465,7 @@ section.subscribe .decoration::before {
     position: absolute;
     z-index: 3; 
     bottom: 30px;
-    left: -35px;
+    left: -10px;
 }
 /* Footer*/
 footer {
@@ -525,7 +526,7 @@ footer .decoration::after {
     height: 351px;
     display: block;
     position: absolute;
-    bottom: 30px;
+    bottom: -10px;
     right: -720px;
 }
 
@@ -534,32 +535,30 @@ footer .decoration::after {
         right: -670px;
         bottom: 190px;
     }
+    footer .decoration::after {
+        bottom: -10px;
+        right: -720px;
+    }
+    .p-custom {
+        padding-left: 100px;
+    }
 }
 @media screen and (min-width: 1400px) {
-    .p-custom {
-      padding-left: 100px;
-  }
   .container-lg {
       max-width: 1184px;
   }
 }
 @media screen and (max-width: 1398px) {
-    section.travel .decoration::before {
-        bottom: 140px;
-        left: 1110px;
+    section.home .decoration::before { 
+        display: none;
     }
-}
-@media screen and (max-width: 1348px) {
+    section.travel .decoration::before { 
+        display: none;
+    } 
     footer .decoration::after {
-        right: -600px;
-        bottom: 190px;
-    }
-    section.travel .decoration::before {
-        bottom: 120px;
-        left: 1060px;
+        display: none;
     }
 }
-
 @media screen and (max-width: 1200px) {
     .section-heading h2 {
         font-size: 40px;
@@ -571,18 +570,11 @@ footer .decoration::after {
     .travel .image::before {
         display: none;
     }
-    section.travel .decoration::before { 
-        display: none;
-    } 
-    footer .decoration::after {
-        right: -550px;
-        bottom: 180px;
-    }
     .flex {
         display: flex;
         flex-direction: column;  
         align-items: center;
-     }
+    }
      .input-group .form-control {
         background: #FFF;
         border: #FFF;
@@ -593,33 +585,19 @@ footer .decoration::after {
         height: 80px;
         width: 100%;
         max-width: 300px;
-     }
+    }
     .church {
-        margin-top: -60px !important;
+        margin-top: 20px;
     }
     .travel .image {
         height: 730px;
     }  
 }
-
-@media screen and (max-width: 1105px) {
-    footer .decoration::after {
-        right: -500px;
-        bottom: 240px;
-    }
-}
-
-
-@media screen and (min-width: 992px) {
-    nav.navbar {
-        display: block;
-    }
-}
 @media screen and (max-width: 992px) {
     nav.navbar {
         position: fixed;
         top: 0;
-        left: -280px;
+        left: -500px;
         font-size: 18px;
         background: white;
         padding: 1rem;
@@ -663,6 +641,7 @@ footer .decoration::after {
         height: 100%;
         width: 100%;
         margin-left: 0px;
+        margin-top: 20px;
     }
     .travel p {
         text-align: center;
@@ -674,10 +653,6 @@ footer .decoration::after {
     .offer .text {
         text-align: center;
     }
-    footer .decoration::after {
-        right: 30px;
-        bottom: 200px;
-    }
     .btn-shadow {
         margin-top: 0rem;
     }
@@ -685,16 +660,12 @@ footer .decoration::after {
         padding-top: 30px;
      }
 } 
-
 @media screen and (max-width: 768px) {
     body {
         background-image: none;
     }
     section.home h2 {
         font-size: 40px;
-    }
-    section.home .decoration::before { 
-        display: none;
     }
     .section-heading h2 {
         font-size: 32px;
@@ -711,6 +682,9 @@ footer .decoration::after {
     }
     .arrows {
         justify-content: space-between;
+    }
+    .offer .church {
+        margin-top: -50px;
     }
     .testimonials  {
         background-image: none;
@@ -734,9 +708,6 @@ footer .decoration::after {
         border: #FFF;
         height: 80px;
         width: 280px;
-    }
-     footer .decoration::after {
-        display: none;
     }
     section.subscribe .decoration::before {
         display: none;
@@ -763,15 +734,34 @@ footer .decoration::after {
         height: 100px;
         margin-top: 0;
      }
+     .clients ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
 }
-
+@media screen and (max-width: 415px) {
+.offer .church {
+    overflow: hidden;
+    }
+a.left, a.right {
+    height: 70px;
+    margin-top: 100px;
+    }
+}
 @media screen and (max-width: 355px) {
 .subscribe .input-group span{
     display: none;
-}
+    }
 .subscribe .input-group input {
     border-radius: 20px !important;
-}
+    }
+    .clients ul {
+        margin-left: -100px;
+    }
+    a.left, a.right {
+        display: none;
+        }
 }
 
 
