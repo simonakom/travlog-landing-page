@@ -652,6 +652,10 @@ footer .decoration::after {
     .church {
         margin-top: 20px;
     }
+    .offer .church img {
+        height: 500px;
+        margin-top: 50px;
+    }
     .travel .image {
         height: 730px;
     }  
@@ -743,9 +747,8 @@ footer .decoration::after {
     .travel .image {
         height: 430px;
     }  
-    .offer img {
-        height: 500px;
-        margin-top: 50px;
+    .offer .church img {
+        height: 450px;
     }
     .arrows {
         justify-content: space-between;
@@ -817,8 +820,8 @@ footer .decoration::after {
     .offer .church {
         overflow: hidden;
     }
-    .offer img {
-        height: 340px;
+    .offer .church img {
+        height: 320px;
         margin-top: 50px;
     }
     a.left, a.right {
@@ -861,6 +864,6 @@ footer .decoration::after {
         margin-bottom: 1px !important;
     }
     .testimonials {
-        margin-bottom: -80px;
+        margin-bottom: -70px;
     }
 }
