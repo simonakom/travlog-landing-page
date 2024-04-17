@@ -732,6 +732,7 @@ footer .decoration::after {
     }
     section.home h2 {
         font-size: 32px;
+        margin-top: 50px !important;
     }
     .section-heading h2 {
         font-size: 32px;
@@ -773,7 +774,7 @@ footer .decoration::after {
         background: #FFF;
         border: #FFF;
         height: 80px;
-        width: 280px;
+        width: 350px;
     }
     section.subscribe .decoration::before {
         display: none;
@@ -805,6 +806,9 @@ footer .decoration::after {
         flex-direction: column;
         margin-top: 20px;
     }
+    .destinations {
+        margin-top: 0px !important;
+    }
     .py-4 {
         padding: 0 !important;
     }
@@ -822,16 +826,15 @@ footer .decoration::after {
         }
     .subscribe .input-group input {
         border-radius: 20px !important;
+        width: 250px;
         }
     .destination img{
         width: 250px;
         padding: 0;
     }
-    .destinations
     a.left, a.right {
-        margin-top: 0px;
-        height: 90px;
-        }
+        display: none;
+    }
     footer p{
         text-align: justify;
         font-size: 15px;
