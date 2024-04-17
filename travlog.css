@@ -403,7 +403,7 @@ section.travel .decoration::before {
 }
 .margin {
     padding-top: 90px;
- }
+}
 .container-lg {
     position: relative;
     z-index: 2; 
@@ -417,15 +417,15 @@ section.travel .decoration::before {
     font-size: 23px;
     font-weight: bold;
     margin-bottom: 20px;
- }
+}
  .testimonials p {
     color: rgba(25, 24, 37, 0.75);
     font-size: 23px;
     text-align: center;
- }
+}
  .space {
     margin-top: 350px;
- }
+}
  .dots a {
     background: #19182513;
     border-radius: 50%;
@@ -433,13 +433,13 @@ section.travel .decoration::before {
     width: 20px;
     height: 20px;
     transition: all 0.5s ease-in-out;
-  }
+}
   .dots a:nth-child(2) {
     background: var(--primary-color);
-  }
+}
   .dots a:hover {
     background: var(--primary-color);
-  }
+}
 /* Section subscribe */
 .subscribe .container-lg {
     border-radius: 32px;
@@ -764,15 +764,15 @@ footer .decoration::after {
     }
     .space {
         padding-top: 800px;
-     }
+    }
      .column7 {
         display: flex;
         flex-direction: column;  
-     }
+    }
      .flex {
         display: flex;
         flex-direction: column;  
-     }
+    }
      .input-group .form-control {
         background: #FFF;
         border: #FFF;
@@ -796,14 +796,14 @@ footer .decoration::after {
     }
     .space {
         margin-top: 1px;
-     }
+    }
     .margin {
         padding-top: 10px;
-     }
+    }
      .description img{
         height: 100px;
         margin-top: 0;
-     }
+    }
      .clients ul {
         display: flex;
         flex-direction: column;
