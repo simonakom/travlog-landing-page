@@ -744,7 +744,7 @@ footer .decoration::after {
         height: 430px;
     }  
     .offer img{
-        height: 340px;
+        height: 500px;
         margin-top: 50px;
     }
     .arrows {
@@ -816,18 +816,22 @@ footer .decoration::after {
 @media screen and (max-width: 415px) {
     .offer .church {
         overflow: hidden;
-        }
+    }
+    .offer img{
+        height: 340px;
+        margin-top: 50px;
+    }
     a.left, a.right {
         height: 70px;
         margin-top: 100px;
-        }
+    }
     .subscribe .input-group span{
         display: none;
-        }
+    }
     .subscribe .input-group input {
         border-radius: 20px !important;
         width: 250px;
-        }
+    }
     .destination img{
         width: 250px;
         padding: 0;
@@ -838,10 +842,10 @@ footer .decoration::after {
     footer p{
         text-align: justify;
         font-size: 15px;
-        }
+    }
     footer .full-footer {
         display: none;
-        }
+    }
     footer .small-footer {
         display:block;
     }
