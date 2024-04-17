@@ -820,6 +820,9 @@ footer .decoration::after {
     }
 }
 @media screen and (max-width: 415px) {
+    .clients ul {
+        margin-left: -100px;
+    }
     .offer .church {
         overflow: hidden;
     }
@@ -857,9 +860,6 @@ footer .decoration::after {
     }
 }
 @media screen and (max-width: 355px) {
-    .clients ul {
-        margin-left: -100px;
-    }
     a.left, a.right {
         display: none;
     }
