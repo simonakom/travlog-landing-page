@@ -379,6 +379,10 @@ section.travel .decoration::before {
     margin-left: 5rem;
     margin-top: 3rem;
 }
+.offer .church img {
+    height: 96%;
+    width: 100%;
+}
 /* Section testimonials*/
 .testimonials {
     width: 100%;
