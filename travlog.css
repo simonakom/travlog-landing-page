@@ -860,6 +860,12 @@ footer .decoration::after {
     }
 }
 @media screen and (max-width: 355px) {
+    .offer .church img {
+        height: 340px;
+    }
+    .travel .image{
+        height: 350px;
+    }
     a.left, a.right {
         display: none;
     }
