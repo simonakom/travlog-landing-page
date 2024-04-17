@@ -380,8 +380,7 @@ section.travel .decoration::before {
     margin-top: 3rem;
 }
 .offer .church img {
-    height: 96%;
-    width: 100%;
+    height: 700px;
 }
 /* Section testimonials*/
 .testimonials {
@@ -657,7 +656,7 @@ footer .decoration::after {
         margin-top: 20px;
     }
     .offer .church img {
-        height: 500px;
+        height: 600px;
         margin-top: 50px;
     }
     .travel .image {
@@ -752,7 +751,7 @@ footer .decoration::after {
         height: 430px;
     }  
     .offer .church img {
-        height: 450px;
+        height: 480px;
     }
     .arrows {
         justify-content: space-between;
